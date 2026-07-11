@@ -904,6 +904,25 @@ button, input, textarea, select {
   overflow: hidden;
 }
 
+.service-image-container {
+  margin: -40px -32px 24px -32px;
+  height: 170px;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid rgba(233, 238, 245, 0.5);
+}
+
+.service-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.service-card:hover .service-image-container img {
+  transform: scale(1.06);
+}
+
 .card-glow-overlay {
   position: absolute;
   top: 0; left: 0; width: 100%; height: 100%;
@@ -1133,7 +1152,28 @@ button, input, textarea, select {
 .why-us-text {
   font-size: 1.15rem;
   color: var(--text-secondary);
-  margin-bottom: 38px;
+  margin-bottom: 24px;
+}
+
+.why-us-image-wrapper {
+  width: 100%;
+  height: 240px;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  margin: 0 0 28px 0;
+  border: var(--border-glass);
+  box-shadow: var(--shadow-sm);
+}
+
+.why-us-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.why-us-image-wrapper:hover img {
+  transform: scale(1.04);
 }
 
 .why-us-cards-list {
@@ -1513,12 +1553,32 @@ button, input, textarea, select {
 }
 
 .material-horizontal-card {
-  padding: 38px 44px;
+  padding: 32px;
   border-radius: 24px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 180px 1.2fr 1.3fr;
+  gap: 32px;
   align-items: center;
+}
+
+.material-img-col {
+  width: 100%;
+  height: 180px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: var(--border-glass);
+  box-shadow: var(--shadow-sm);
+}
+
+.material-img-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.material-horizontal-card:hover .material-img-col img {
+  transform: scale(1.05);
 }
 
 .m-card-header {
@@ -2745,8 +2805,13 @@ button, input, textarea, select {
 
   .material-horizontal-card {
     grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 32px;
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .material-img-col {
+    width: 100%;
+    height: 200px;
   }
 
   .area-grid {
