@@ -18,19 +18,7 @@ export default function Preloader() {
           key="preloader"
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, transition: { duration: 0.5, ease: 'easeInOut' } }}
-          className="preloader"
-          style={{
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            background: '#F7F9FC',
-            zIndex: 9999,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
+          className="page-loader"
         >
           <div className="loader-content">
             <svg viewBox="0 0 100 100" className="loader-svg">
