@@ -6,12 +6,14 @@ import Stats from './components/Stats';
 import Services from './components/Services';
 import BeforeAfter from './components/BeforeAfter';
 import WhyChooseUs from './components/WhyChooseUs';
+import Process from './components/Process';
 import Portfolio from './components/Portfolio';
 import Materials from './components/Materials';
 import Emergency from './components/Emergency';
+import Reviews from './components/Reviews';
 import ServiceArea from './components/ServiceArea';
 import EstimateWizard from './components/EstimateWizard';
-import Reviews from './components/Reviews';
+import Faq from './components/Faq';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -54,12 +56,14 @@ export default function App() {
         <Services />
         <BeforeAfter />
         <WhyChooseUs />
+        <Process />
         <Portfolio />
         <Materials />
         <Emergency />
+        <Reviews />
         <ServiceArea />
         <EstimateWizard />
-        <Reviews />
+        <Faq />
       </main>
 
       {/* Brand promotional footer */}

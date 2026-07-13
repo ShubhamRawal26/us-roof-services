@@ -22,7 +22,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="hero-section" id="home">
+    <section className="hero-section" id="hero">
       {/* Background with import binding */}
       <div 
         className="hero-background" 
