@@ -23,6 +23,7 @@ export default function App() {
         const rect = el.getBoundingClientRect();
         const isInView = rect.top <= (window.innerHeight || document.documentElement.clientHeight) / 1.02;
         if (isInView) {
+          el.classList.add('active');
           el.classList.add('revealed');
         }
       });

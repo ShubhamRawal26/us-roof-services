@@ -259,7 +259,8 @@ button, input, textarea, select {
   transition: opacity 800ms var(--ease-premium), transform 800ms var(--ease-premium);
 }
 
-.scroll-reveal.active {
+.scroll-reveal.active,
+.scroll-reveal.revealed {
   opacity: 1;
   transform: translateY(0);
 }
