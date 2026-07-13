@@ -143,14 +143,14 @@ export default function ServiceArea() {
             <g className={`map-pin-g ${activeCity.id === 'pflugerville' ? 'active' : ''}`} onClick={() => handleCitySelect('pflugerville')}>
               <circle cx="340" cy="230" r="14" className="pin-pulse-circle"/>
               <path d="M340 220c-5.5 0-10 4.5-10 10 0 7.5 10 18.3 10 18.3s10-10.8 10-18.3c0-5.5-4.5-10-10-10zm0 13.8c-2 0-3.8-1.7-3.8-3.8s1.7-3.8 3.8-3.8 3.8 1.7 3.8 3.8-1.7 3.8-3.8 3.8z" fill="#0B1F3A"/>
-              <text x="340" y="208" text-anchor="middle" className="map-pin-text">Pflugerville</text>
+              <text x="340" y="208" textAnchor="middle" className="map-pin-text">Pflugerville</text>
             </g>
 
             {/* Leander Pin */}
             <g className={`map-pin-g ${activeCity.id === 'leander' ? 'active' : ''}`} onClick={() => handleCitySelect('leander')}>
               <circle cx="120" cy="140" r="14" className="pin-pulse-circle"/>
               <path d="M120 130c-5.5 0-10 4.5-10 10 0 7.5 10 18.3 10 18.3s10-10.8 10-18.3c0-5.5-4.5-10-10-10zm0 13.8c-2 0-3.8-1.7-3.8-3.8s1.7-3.8 3.8-3.8 3.8 1.7 3.8 3.8-1.7 3.8-3.8 3.8z" fill="#0B1F3A"/>
-              <text x="120" y="118" text-anchor="middle" className="map-pin-text">Leander</text>
+              <text x="120" y="118" textAnchor="middle" className="map-pin-text">Leander</text>
             </g>
           </svg>
 

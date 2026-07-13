@@ -41,7 +41,7 @@ export default function Footer() {
               </svg>
               <span>SUMMIT<strong>SHIELD</strong></span>
             </div>
-            <p className="footer-brand-desc">SummitShield Roofing is Central Texas\' premier provider of high-performance residential and commercial roofing systems. Built on trust, craftsmanship, and lifetime support.</p>
+            <p className="footer-brand-desc">SummitShield Roofing is Central Texas' premier provider of high-performance residential and commercial roofing systems. Built on trust, craftsmanship, and lifetime support.</p>
             <div className="footer-badges">
               <div className="footer-badge glass-card">
                 <ShieldCheck size={14} className="text-blue" />

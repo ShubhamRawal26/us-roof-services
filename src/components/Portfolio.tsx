@@ -115,6 +115,8 @@ export default function Portfolio() {
     return project.categories.includes(activeFilter);
   });
 
+  const currentProject = lightboxIndex !== null ? filteredProjects[lightboxIndex] : null;
+
   const openLightbox = (index: number) => {
     setLightboxIndex(index);
   };
@@ -145,7 +147,7 @@ export default function Portfolio() {
         <div className="container">
           <div className="section-header text-center">
             <span className="section-eyebrow scroll-reveal">PORTFOLIO</span>
-            <h2 className="section-title scroll-reveal">Roofs We\'re Proud<br />to Put Our Name On.</h2>
+            <h2 className="section-title scroll-reveal">Roofs We're Proud<br />to Put Our Name On.</h2>
           </div>
 
           {/* Filter Segmented Controls */}
@@ -200,7 +202,7 @@ export default function Portfolio() {
 
       {/* Fullscreen Lightbox Modal */}
       <AnimatePresence>
-        {lightboxIndex !== null && (
+        {lightboxIndex !== null && currentProject && (
           <motion.div
             key="lightbox"
             initial={{ opacity: 0 }}
@@ -232,17 +234,17 @@ export default function Portfolio() {
               onClick={(e) => e.stopPropagation()}
             >
               <img 
-                src={filteredProjects[lightboxIndex].image} 
-                alt={filteredProjects[lightboxIndex].title} 
+                src={currentProject.image} 
+                alt={currentProject.title} 
               />
               <div className="lightbox-details-bar glass-card">
                 <div>
-                  <span className="light-loc">{filteredProjects[lightboxIndex].location}</span>
-                  <h3>{filteredProjects[lightboxIndex].title}</h3>
+                  <span className="light-loc">{currentProject.location}</span>
+                  <h3>{currentProject.title}</h3>
                 </div>
                 <div className="light-meta">
-                  <span><strong>Material:</strong> {filteredProjects[lightboxIndex].material}</span>
-                  <span><strong>Duration:</strong> {filteredProjects[lightboxIndex].time}</span>
+                  <span><strong>Material:</strong> {currentProject.material}</span>
+                  <span><strong>Duration:</strong> {currentProject.time}</span>
                 </div>
               </div>
             </motion.div>

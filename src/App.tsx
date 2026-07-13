@@ -28,8 +28,11 @@ export default function App() {
       });
     };
 
-    // Initial check
+    // Initial checks at multiple intervals to capture layout states during and after preloader unmounting
     setTimeout(handleScrollAnimation, 100);
+    setTimeout(handleScrollAnimation, 600);
+    setTimeout(handleScrollAnimation, 1300);
+    setTimeout(handleScrollAnimation, 1800);
 
     window.addEventListener('scroll', handleScrollAnimation);
     return () => window.removeEventListener('scroll', handleScrollAnimation);

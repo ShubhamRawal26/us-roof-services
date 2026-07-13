@@ -91,7 +91,7 @@ export default function EstimateWizard() {
         <div className="section-header text-center">
           <span className="section-eyebrow scroll-reveal">GET A QUOTE</span>
           <h2 className="section-title scroll-reveal">Your Better Roof Starts Here.</h2>
-          <p className="section-desc scroll-reveal">Tell us a little about your property. We\'ll handle the rest.</p>
+          <p className="section-desc scroll-reveal">Tell us a little about your property. We'll handle the rest.</p>
         </div>
 
         {/* Wizard Panel */}
@@ -283,7 +283,7 @@ export default function EstimateWizard() {
                 >
                   <CheckCircle2 size={56} className="text-success mx-auto mb-4" />
                   <h2>Calculation Complete!</h2>
-                  <p className="success-thank-you">Thank you, {contactInfo.firstName}. We\'ve compiled your preliminary roof replacement estimate range below.</p>
+                  <p className="success-thank-you">Thank you, {contactInfo.firstName}. We've compiled your preliminary roof replacement estimate range below.</p>
                   
                   <div className="pricing-estimate-panel glass-card">
                     <span className="est-title">Estimated Range</span>
